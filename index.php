@@ -35,18 +35,9 @@ foreach ($client->getBuckets() as $bucket) {
 // Put a file in the new bucket and dump the result.
 $filePath = 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
 $fileName = basename($filePath);
-$result = $client->putFile(
-    $bucketName,
-    $fileName,
-    file_get_contents($filePath)
-);
-
+$result = $client->putFile($bucketName, $fileName, $filePath);
 var_dump($result);
 
 // Get the new file from bucket and dump the result.
-$result = $client->getFile(
-    $bucketName,
-    $fileName
-);
-
+$result = $client->getFile($bucketName, $fileName);
 var_dump($result);

@@ -75,8 +75,7 @@ class CephClient implements StorageClientInterface {
         return $this->storage->putObject([
             'Bucket' => $bucket,
             'Key' => $name,
-            'Body' => $content,
-            //'SourceFile' => $content,
+            'SourceFile' => $content,
             //'ACL' => 'public-read'
         ]);
     }
@@ -94,6 +93,14 @@ class CephClient implements StorageClientInterface {
         ]);
     }
 
+    /**
+     * @param $sourceBucket
+     * @param $sourceName
+     * @param $destinationBucket
+     * @param null $destinationName
+     *
+     * @return mixed
+     */
     public function moveFile(
         $sourceBucket,
         $sourceName,

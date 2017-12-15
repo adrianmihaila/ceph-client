@@ -43,12 +43,12 @@ interface StorageClientInterface {
 
     /**
      * @param $bucket
-     * @param $name
-     * @param $content
+     * @param $file
+     * @param null $name
      *
      * @return mixed
      */
-    public function putFile($bucket, $name, $content);
+    public function putFile($bucket, $file, $name = null);
 
     /**
      * @param $bucket

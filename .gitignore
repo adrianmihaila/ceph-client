@@ -1,4 +1,2 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea/*
-composer.phar
-vendor
+.idea/
+vendor/

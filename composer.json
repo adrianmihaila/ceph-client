@@ -7,7 +7,7 @@
     "storage",
     "PHP"
   ],
-  "homepage": "https://github.com/adrianmihaila/working-with-ceph-in-php",
+  "homepage": "https://github.com/adrianmihaila/ceph-client",
   "license": "MIT",
   "authors": [
     {

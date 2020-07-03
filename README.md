@@ -1,4 +1,4 @@
-# CephClient [![Build Status](https://travis-ci.org/adrianmihaila/working-with-ceph-in-php.svg?branch=master)](https://travis-ci.org/adrianmihaila/working-with-ceph-in-php)
+# CephClient [![Build Status](https://travis-ci.org/adrianmihaila/ceph-client.svg?branch=master)](https://travis-ci.org/adrianmihaila/ceph-client)
 
 Provides a CephClient for storing files in PHP.
 
